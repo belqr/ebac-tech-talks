@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;
-  1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;
+  1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="styles/index.scss">
   <title>EBAC Talks - Módulo 22</title>
 </head>
@@ -14,11 +15,100 @@
   <header class="hero">
     <div class="container">
       <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
-      <p class="hero__text">O maior evento de tecnologia do Brasil começa em 10D 12h 20min 15s</p>
+      <p class="hero__text">O maior evento de tecnologia do Brasil começa em <span id="counter"></span></p>
+      <div class="infos-bar">
+        <ul class="infos-bar__infos">
+          <li class="infos-bar__infos__item">
+            <b>Localização</b>
+            Allianza Parque - Barra Funda - São Paulo
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Preço</b>
+            A partir de R$120,00
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Quando</b>
+            16/05/2024 às 19hrs
+          </li>
+        </ul>
+        <a class="button button--primary" href="#">Garanta sua vaga</a>
+      </div>
     </div>
   </header>
+  <section class="event event--frontend">
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__details__title">Front-end</h2>
+        <p class="event__details__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum aperiam saepe inventore voluptas, 
+          mollitia vitae eius eos vel! Ipsam quod iusto vitae, quam error illo nihil illum obcaecati? 
+          Distinctio, nemo.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio earum adipisci libero quaerat 
+          totam eaque incidunt voluptas suscipit. Iusto harum minima accusantium illo ea commodi officia quas! 
+          Nisi, at sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic blanditiis 
+          id repudiandae reiciendis placeat eaque earum a sed ducimus asperiores laudantium eius numquam, 
+          soluta sint minus alias sapiente.
+        </p>
+      </div>
+      <img class="event__image" src="./images/frontend.png" alt="Front-end">
+    </div>
+  </section>
+  <section class="event event--ux-ui event--image-left">
+    <div class="container" data-aos="fade-left">
+      <div class="event__details">
+        <h2 class="event__details__title">UX/UI</h2>
+        <p class="event__details__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum aperiam saepe inventore voluptas, 
+          mollitia vitae eius eos vel! Ipsam quod iusto vitae, quam error illo nihil illum obcaecati? 
+          Distinctio, nemo.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio earum adipisci libero quaerat 
+          totam eaque incidunt voluptas suscipit. Iusto harum minima accusantium illo ea commodi officia quas! 
+          Nisi, at sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic blanditiis 
+          id repudiandae reiciendis placeat eaque earum a sed ducimus asperiores laudantium eius numquam, 
+          soluta sint minus alias sapiente.
+        </p>
+      </div>
+      <img class="event__image" src="./images/ui-ux.png" alt="UX/UI">
+    </div>
+  </section>
+  <section class="event event--data-science">
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__details__title">Data Science</h2>
+        <p class="event__details__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum aperiam saepe inventore voluptas, 
+          mollitia vitae eius eos vel! Ipsam quod iusto vitae, quam error illo nihil illum obcaecati? 
+          Distinctio, nemo.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio earum adipisci libero quaerat 
+          totam eaque incidunt voluptas suscipit. Iusto harum minima accusantium illo ea commodi officia quas! 
+          Nisi, at sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic blanditiis 
+          id repudiandae reiciendis placeat eaque earum a sed ducimus asperiores laudantium eius numquam, 
+          soluta sint minus alias sapiente.
+        </p>
+      </div>
+      <img class="event__image" src="./images/data.png" alt="Data Science">
+    </div>
+  </section>
+  <section class="event event--backend event--image-left">
+    <div class="container" data-aos="fade-left">
+      <div class="event__details">
+        <h2 class="event__details__title">Back-end</h2>
+        <p class="event__details__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum aperiam saepe inventore voluptas, 
+          mollitia vitae eius eos vel! Ipsam quod iusto vitae, quam error illo nihil illum obcaecati? 
+          Distinctio, nemo.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio earum adipisci libero quaerat 
+          totam eaque incidunt voluptas suscipit. Iusto harum minima accusantium illo ea commodi officia quas! 
+          Nisi, at sequi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium hic blanditiis 
+          id repudiandae reiciendis placeat eaque earum a sed ducimus asperiores laudantium eius numquam, 
+          soluta sint minus alias sapiente.
+        </p>
+      </div>
+      <img class="event__image" src="./images/backend.png" alt="Back-end">
+    </div>
+  </section>
 
-  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="scripts/index.js"></script>
 </body>
 </html>
